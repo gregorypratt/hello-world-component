@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello Web Component</title>
+
+    <!-- To make it work with browsers that don't support Web Components yet read this -->
+    <!--https://github.com/WebComponents/webcomponentsjs-->
+
+    <script src="./hello-world.js"></script>
+</head>
+<body>
+
+    <h1>Custom Element Example</h1>
+    <!-- Run custom element -->
+    <hello-world text="Click me" message="Hello world!">
+        <div slot="second">This goes into the second slot</div>
+        <div slot="first">This goes into the first slot</div>
+        <div>This and the following <code>&lt;div&gt;</code></div>
+        <div>all pile into the next available slot</div>
+    </hello-world>
+
+</body>
+</html>
